@@ -161,7 +161,10 @@ width:50%
        margin:2em 1em 1em;
        color:white;
            
-   }
+       .votestamp{
+    margin-top:1em;
+}
+
   
   
    /*styling login screen*/
