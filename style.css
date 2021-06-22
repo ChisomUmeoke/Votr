@@ -5,6 +5,7 @@ body{
     margin:0;
     border:0;
     background-color: white;
+    overflow-x: hidden;
 }
 
 .hero-bg{
@@ -185,8 +186,12 @@ width:60%
    .footer1{
        margin:2em 1em 1em;
        color:white;
-           
    }
+   
+    .votestamp{
+    margin-top:1em;
+}
+
   
   
    /*styling login screen*/
@@ -252,12 +257,15 @@ width:60%
 
   
 
-/*@media only screen and (max-width: 768px) and (min-width: 481px){
-
+@media only screen and (max-width: 768px) and (min-width: 481px){
+   body{
+       overflow-x: hidden;
+   } 
    
-   
-   .container1{
+    
+    .container1{
         flex-direction: column;
+        overflow-x: hidden;
         width:90vw;
         height:95vh;
         padding:1em 3em;
@@ -473,10 +481,12 @@ margin-left:4em;
           
   }
  
-}*/
-
+}
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-
+    body{
+       overflow-x: hidden;
+   } 
+   
     .container1{
         flex-direction: column;
         margin-top:1em;
@@ -500,25 +510,19 @@ margin-left:4em;
 
     .hero-bg{
         width: 100vw;
-        padding:0.20em;
-        display:flex;
-        flex-direction: column;
+        padding-top :0.40em;
+        display:block;
     }
     
     .logo{
     width:15%;
-    margin-left: 2.55em;
-    margin-bottom: 1em;
-    
         }
 
     .nav{
          font-size:0.90rem;
-
     }
     .headnav{
-        margin-left: 1em;
-        
+        margin-left:2.55em;
     }    
     
     .btn1{
@@ -543,17 +547,15 @@ margin-left:4em;
     }
     
     .voters{
-        width:80vw;
-        display:block;
-        margin:auto;
+        width:90vw;
+        margin:1em
     }
     
     .secure{
         color:#4C982A;
         font-size:1.15rem;
-       display:block;
-       margin:auto;
-        
+        text-align: center;
+        max-width:none;
     }
     .secure-p{
      font-size:0.90rem;
@@ -621,7 +623,8 @@ margin-left:4em;
         }
 
         .image-svg{
-            margin-left:7.15em;
+           display:block;
+           margin:auto;
             
         }
     
@@ -647,7 +650,8 @@ margin-left:4em;
 
         .img-steps{
             width:70%;
-            margin-left:2em;
+             display:block;
+             margin:auto;
         }
     
     .steps-details{
@@ -681,7 +685,7 @@ margin-left:4em;
           
        }
        .footer1{
-           margin:2em 2em 1em;
+           margin:2em 1em 1em;
            color:white;
            font-size:0.90rem;
                
