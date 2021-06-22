@@ -9,14 +9,15 @@ body{
 }
 
 .hero-bg{
+    padding:0 1.55em;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0px 4px 10px 3px rgba(0, 119, 182, 0.06);
 }
 
 .logo{
-margin-top:1em;
-width:60%
+margin: 1.50em;
+width:45%
 }
 
 .nav{
@@ -181,7 +182,7 @@ width:60%
     justify-content: space-around;
     background-image: linear-gradient(rgba(60, 187, 124, 0.973), rgba(23, 146, 74, 0.74)),url(Images/Voting.svg);
      background-size: cover;
-     min-height: 15rem;     
+     min-height: 12rem;     
    }
    .footer1{
        margin:2em 1em 1em;
@@ -189,8 +190,8 @@ width:60%
    }
    
     .votestamp{
-    margin-top:1em;
-}
+    margin-top:1.55em;
+    }
 
   
   
@@ -257,7 +258,7 @@ width:60%
 
   
 
-@media only screen and (max-width: 768px) and (min-width: 481px){
+@media only screen and (max-width: 768px) {
    body{
        overflow-x: hidden;
    } 
@@ -482,7 +483,8 @@ margin-left:4em;
   }
  
 }
-@media only screen and (max-width: 480px) and (min-width: 320px) {
+@media only screen and (max-width: 480px) {
+    
     body{
        overflow-x: hidden;
    } 
@@ -491,42 +493,98 @@ margin-left:4em;
         flex-direction: column;
         margin-top:1em;
         width:90vw;
-        height:90vh;
-        padding:1em 3em 2em 2.85em;
-        overflow-x: hidden;
+        height:95vh;
         }
 
+
+
+
  .casting{
-   margin: 0.35em 0 0 2.45em;
-   }
+   display:block;
+   margin: 1em auto;
+ }
   
-.btn4{
-   
+.btn4{ 
    margin-top:1em;
 }
+
 .container2{
     width:90vw;
 }
 
-    .hero-bg{
-        width: 100vw;
-        padding-top :0.40em;
-        display:block;
-    }
-    
-    .logo{
-    width:15%;
-        }
+input[type=text] {
+    padding: 1em 3em;
+    border: 1px solid #4C982A; 
+    border-radius: 4px; 
+    margin:auto;
+    display:block;
 
-    .nav{
-         font-size:0.90rem;
-    }
-    .headnav{
-        margin-left:2.55em;
-    }    
-    
+  }
+label{
+  display:block;
+  margin:auto;
+}
+
+  .btn4{
+    background-color:#4C982A;
+    color:white;
+    border:none;
+    padding:0.75rem 6.25rem;
+    border-radius:5px;
+    margin: 2em auto;
+    display:block;
+    font-size:1em;
+}
+.hero-bg{
+    padding:0;
+}
+
+.headnav{
+    position:absolute;
+        left: -100%;
+        top: 2em;
+        flex-direction: row;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        
+}
+
+
+.headnav.active{
+    left:0;
+
+}
+.hamburger{
+    display:block;
+    cursor:pointer;
+    margin:auto 3em ;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.logo{
+margin: 1em 0 1.55em 3em;
+width:45%;
+}
+
+.nav{     
+     text-decoration:none;
+     color:#4A4A4A;
+}
     .btn1{
-        padding:0.35em 1.15em;
+        padding:0.35em 1em;
         font-size:0.85rem;
         
     }
@@ -548,18 +606,22 @@ margin-left:4em;
     
     .voters{
         width:90vw;
-        margin:1em
+        display:block;
+        margin:auto;
     }
     
     .secure{
         color:#4C982A;
         font-size:1.15rem;
         text-align: center;
-        max-width:none;
+        display:block;
+         margin:auto;
     }
     .secure-p{
      font-size:0.90rem;
      text-align: center;
+     display:block;
+     margin:1em auto;
     }
 
     .btn2{
@@ -571,13 +633,14 @@ margin-left:4em;
     
     .b-bg{
         background:linear-gradient(rgba(60, 187, 124, 0.973), rgba(23, 146, 74, 0.74));
-    
+        padding:2em;
     }
     
     .h-bg{
         text-align: center;
         font-size:1.15rem;
-        margin:1em;
+        margin:0.45em;
+
     }
     .p-bg{
         color:white;
@@ -628,11 +691,6 @@ margin-left:4em;
             
         }
     
-        .steps{
-            background-color: #FCFCFC;
-            padding:2em;
-
-        }
         h4{
             color:#4A4A4A;
            
@@ -647,31 +705,37 @@ margin-left:4em;
             font-size:1.15rem;
             text-align: center;
         }
+        .steps{
+            background-color: #FCFCFC;
 
+        }
+        
         .img-steps{
             width:70%;
              display:block;
-             margin:auto;
+             margin:1em auto;
         }
     
     .steps-details{
-        display:flex;
-        justify-content:space-around; 
-        flex-direction: column;  
+      flex-direction: column; 
+      align-content: center; 
     }
     
     .p-steps{
-        max-width: 40em;
+       display:block;
+       margin: auto;
         font-size:0.90rem;
         color:#4A4A4A;
+        margin-left:1em;
     }
     
     .h-steps{
         font-size:1.15rem;
         color:#4C982A;
+        text-align:center;
     }
 
-    /* comment chnage */
+
     
     
     .footer{
@@ -679,18 +743,17 @@ margin-left:4em;
         justify-content: space-around;
         background-image: linear-gradient(rgba(60, 187, 124, 0.973), rgba(23, 146, 74, 0.74)),url(Images/Voting.svg);
          background-size: cover;
-         min-height: 15rem;     
+         min-height: 10rem;     
        }
        .logo1{
-           width:60%;
-           margin:1em;
+           display:none;
           
        }
        .footer1{
-           margin:2em 1em 1em;
+        
            color:white;
-           font-size:0.90rem;
+           font-size:0.80rem;
+           margin-left:1em;
                
        }
-      
-}
+    }
